@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- link co css -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+
+    <!-- Criar elemento canvas -->
+    <canvas id="tela" width="840" height="480"></canvas>
+
+
+    <script id="meu-vertex-shader" type="hlsl">
+    attribute vec4 posicao;
+    //Uniform é um modificador que determina o escopo da variável
+    uniform mat4 u_escala;
+    uniform mat4 u_transforma;
+
+    void main() {                
+    gl_Position = u_escala * u_transforma * posicao;
+}
+    </script>
+
+    <script id="meu-fragment-shader" type="hlsl">
+    precision mediump float;
+    void main(){
+    gl_FragColor = vec4(1, 0, 0.5, 1); 
+}
+    </script>
+
+    <script src="Render.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
