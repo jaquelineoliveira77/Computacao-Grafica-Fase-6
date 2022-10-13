@@ -1,0 +1,11 @@
+Curva de hermite
+Os vetores dão o direcionamento para os pontos(vértices)  **usa 4 valores,2 pontos, 2 vetores -> sentido de força, 2 pontos
+a linha passa pelo ponto inicial e final, na
+
+-----------
+
+Curva de Bézier
+baseia se na coordenadas / não passa pelos pontos de controle
+
+Spline 
+Passa por todos os pontos
